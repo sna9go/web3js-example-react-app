@@ -1,6 +1,8 @@
 ![Example React App Web3js](./app.gif)
 
 
+### git & npm log
+
 git clone https://github.com/sna9go/web3js-example-react-app.git
 
 cd web3js-example-react-app
