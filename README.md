@@ -278,3 +278,46 @@ TS2322: Type 'TransactionReceipt' is not assignable to type 'Receipt'.
     31 | 	public getAccount(){
 > 
 ![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/977e8e4e-a991-471f-a128-4af6e1761f2a)
+
+
+
+import {Receipt, DataFormat} from 'web3-types';
+import {web3} from './web3';
+// import {DataFormat} from "web3-utils";
+import {Web3Account} from "web3-eth-accounts";
+
+webpack compiled successfully
+ERROR in src/web3/wallet.ts:28:3
+TS2322: Type 'TransactionReceipt' is not assignable to type 'Receipt'.
+  Index signature for type 'string' is missing in type 'TransactionReceiptBase<Numbers, Bytes, Bytes, Log>'.
+    26 |                const signedTx = await web3.eth.accounts.signTransaction(tx, this.account.privateKey);
+    27 |
+  > 28 |                return web3.eth.sendSignedTransaction<DataFormat>(signedTx.rawTransaction);
+       |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    29 |        }
+    30 |
+    31 |        public getAccount(){
+> 
+
+![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/fa4a7120-5bf6-4483-871d-354a17039761)
+
+Compiled with problems:
+×
+ERROR in src/web3/wallet.ts:28:3
+TS2322: Type 'TransactionReceipt' is not assignable to type 'Receipt'.
+  Index signature for type 'string' is missing in type 'TransactionReceiptBase<Numbers, Bytes, Bytes, Log>'.
+    26 | 		const signedTx = await web3.eth.accounts.signTransaction(tx, this.account.privateKey);
+    27 |
+  > 28 | 		return web3.eth.sendSignedTransaction<DataFormat>(signedTx.rawTransaction);
+       | 		^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    29 | 	}
+    30 |
+    31 | 	public getAccount(){
+> 
+
+![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/bc29fb6d-6985-4a44-ac9b-19c17e988383)
+
+
+
+
+
