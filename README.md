@@ -197,4 +197,60 @@ D:\w\web3\web3js-example-react-app>
 
 
 
+D:\w\web3\web3js-example-react-app>npm run start
+
+> web3js-example-react-app@0.1.0 start D:\w\web3\web3js-example-react-app
+> react-scripts start
+
+(node:28880) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:28880) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+One of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it may break at any time.
+
+babel-preset-react-app is part of the create-react-app project, which
+is not maintianed anymore. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.
+Compiled successfully!
+
+You can now view web3js-example-react-app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.3.9:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+webpack compiled successfully
+ERROR in src/web3/wallet.ts:5:9
+TS2724: '"web3-utils"' has no exported member named 'DataFormat'. Did you mean 'isDataFormat'?
+    3 | import { Receipt} from 'web3-types';
+    4 | import {web3} from './web3';
+  > 5 | import {DataFormat} from "web3-utils";
+      |         ^^^^^^^^^^
+    6 | import {Web3Account} from "web3-eth-accounts";
+    7 |
+    8 | export class Wallet {
+
+ERROR in src/web3/wallet.ts:28:3
+TS2322: Type 'TransactionReceipt' is not assignable to type 'Receipt'.
+  Index signature for type 'string' is missing in type 'TransactionReceiptBase<Numbers, Bytes, Bytes, Log>'.
+    26 |                const signedTx = await web3.eth.accounts.signTransaction(tx, this.account.privateKey);
+    27 |
+  > 28 |                return web3.eth.sendSignedTransaction<DataFormat>(signedTx.rawTransaction);
+       |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    29 |        }
+    30 |
+    31 |        public getAccount(){
+> 
+
+
+![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/e9953a5b-5f95-43ba-ad4f-508275fe3db0)
 
