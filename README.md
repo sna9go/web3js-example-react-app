@@ -319,6 +319,7 @@ TS2322: Type 'TransactionReceipt' is not assignable to type 'Receipt'.
 
 
 ![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/e9e50276-41fd-4ca0-b41a-685ed78bc72e)
+
 D:\w\web3\web3js-example-react-app>npm run start
 
 > web3js-example-react-app@0.1.0 start D:\w\web3\web3js-example-react-app
