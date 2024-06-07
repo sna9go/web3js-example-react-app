@@ -254,4 +254,27 @@ TS2322: Type 'TransactionReceipt' is not assignable to type 'Receipt'.
 
 ![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/e9953a5b-5f95-43ba-ad4f-508275fe3db0)
 
+
+Compiled with problems:
+×
+ERROR in src/web3/wallet.ts:5:9
+TS2724: '"web3-utils"' has no exported member named 'DataFormat'. Did you mean 'isDataFormat'?
+    3 | import { Receipt} from 'web3-types';
+    4 | import {web3} from './web3';
+  > 5 | import {DataFormat} from "web3-utils";
+      |         ^^^^^^^^^^
+    6 | import {Web3Account} from "web3-eth-accounts";
+    7 |
+    8 | export class Wallet {
+ERROR in src/web3/wallet.ts:28:3
+TS2322: Type 'TransactionReceipt' is not assignable to type 'Receipt'.
+  Index signature for type 'string' is missing in type 'TransactionReceiptBase<Numbers, Bytes, Bytes, Log>'.
+    26 | 		const signedTx = await web3.eth.accounts.signTransaction(tx, this.account.privateKey);
+    27 |
+  > 28 | 		return web3.eth.sendSignedTransaction<DataFormat>(signedTx.rawTransaction);
+       | 		^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    29 | 	}
+    30 |
+    31 | 	public getAccount(){
+> 
 ![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/977e8e4e-a991-471f-a128-4af6e1761f2a)
