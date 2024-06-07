@@ -318,6 +318,30 @@ TS2322: Type 'TransactionReceipt' is not assignable to type 'Receipt'.
 ![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/bc29fb6d-6985-4a44-ac9b-19c17e988383)
 
 
+![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/e9e50276-41fd-4ca0-b41a-685ed78bc72e)
+D:\w\web3\web3js-example-react-app>npm run start
 
+> web3js-example-react-app@0.1.0 start D:\w\web3\web3js-example-react-app
+> react-scripts start
+
+(node:40888) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:40888) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+Compiled successfully!
+
+You can now view web3js-example-react-app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.3.9:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+webpack compiled successfully
+Files successfully emitted, waiting for typecheck results...
+Issues checking in progress...
+No issues found.
+![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/ea405776-ef97-4f6b-9814-ab55b2478455)
 
 
