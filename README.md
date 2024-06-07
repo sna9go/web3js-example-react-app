@@ -254,3 +254,4 @@ TS2322: Type 'TransactionReceipt' is not assignable to type 'Receipt'.
 
 ![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/e9953a5b-5f95-43ba-ad4f-508275fe3db0)
 
+![image](https://github.com/sna9go/web3js-example-react-app/assets/99084228/977e8e4e-a991-471f-a128-4af6e1761f2a)
